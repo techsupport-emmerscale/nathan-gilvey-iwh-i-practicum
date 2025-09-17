@@ -1,0 +1,18 @@
+doctype html
+html 
+    head 
+    body 
+        h1 Custom Objects Record
+        a(href="/update-cobj") Add/Update this table
+        table 
+            thead
+                tr 
+                    th Name 
+                    th Date Released 
+                    th Players to Date 
+            tbody
+                each item in data
+                    tr
+                        td #{item.properties.name}
+                        td #{item.properties.release_date}
+                        td #{item.properties.players_to_date}
