@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
         'Content-Type': 'application/json'
     }
     const response = await axios.get(videoGamesUrl, {headers});
-    res.json(response.data.results)
+    res.json(response.data.results);
     
 });
 
